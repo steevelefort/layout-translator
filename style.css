@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 2vw;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0 1rem 1rem 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+main.output {
+  padding: 10px;
+  border: #aaa solid 2px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+
+.key {
+  margin-bottom: 10px;
+}
+
+.char {
+  padding: 5px;
+  margin: 1px 2px;
+  border: #aaa solid 2px;
+  border-width: 0.5rem;
+  border-color: #fdd #b99 #b99 #fdd;
+  background: linear-gradient(-45deg, #fdd, #caa);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.2rem;
+
+}
+
+.in {
+  position: relative;
+}
+
+.in::after {
+  content: "↓";
+  font-size: 2.5rem;
+  position: absolute;
+  top: 1.2rem;
+  z-index: 1;
+  opacity: .25;
+}
+
+.out {
+  filter: hue-rotate(180deg);
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
