@@ -1,4 +1,5 @@
-const baseUrl = 'https://raw.githubusercontent.com/Nuclear-Squid/ergol/master/layouts/';
+// const baseUrl = 'https://raw.githubusercontent.com/Nuclear-Squid/ergol/master/layouts/';
+const baseUrl = './layouts/';
 
 const availableLayouts = {
   ISRT: 'ISRT.json',
